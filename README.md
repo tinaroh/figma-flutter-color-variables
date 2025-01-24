@@ -1,3 +1,52 @@
+# Figma Color Variables to Flutter
+
+A Figma plugin that exports color variables to Flutter-compatible code. This plugin helps maintain color consistency between your Figma design system and Flutter codebase by automatically converting Figma color variables into type-safe Flutter color definitions.
+
+## Features
+
+- Exports Figma color variables as Flutter color constants
+- Supports mode variants (such as light/dark mode)
+- Generates enums for color modes, constants for colors, or aliases as camelCase
+- Supports prefix name for classes
+
+## Usage
+
+1. Open your Figma file containing color variables
+2. Run the plugin from Plugins > Flutter Color Variables
+3. (Optional) Enter a prefix for the generated color classes
+4. Click "Export" to generate the Flutter code
+5. Copy the generated code into your Flutter project with "Copy All"
+
+## Example Output
+
+The plugin generates Flutter code in the following format:
+
+```dart
+import 'dart:ui';
+
+enum ColorsMode {
+  lightMode,
+  darkMode
+}
+
+class Colors {
+  // Single-value colors
+  static Color primaryColor = const Color(0xFF000000);
+  
+  // Mode-dependent colors
+  static Color backgroundColor(ColorsMode mode) {
+    switch (mode) {
+      case ColorsMode.lightMode:
+        return const Color(0xFFFFFFFF);
+      case ColorsMode.darkMode:
+        return const Color(0xFF000000);
+    }
+  }
+}
+```
+
+## Development
+
 Below are the steps to get your plugin running. You can also find instructions at:
 
   https://www.figma.com/plugin-docs/plugin-quickstart-guide/
