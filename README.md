@@ -1,6 +1,11 @@
 # Figma Color Variables to Flutter
 
-A Figma plugin that exports color variables to Flutter-compatible code. This plugin helps maintain color consistency between your Figma design system and Flutter codebase by automatically converting Figma color variables into type-safe Flutter color definitions.
+A Figma plugin that exports color variables to Flutter-compatible code. This
+plugin helps maintain color consistency between your Figma design system and
+Flutter codebase by automatically converting Figma color variables into
+type-safe Flutter color definitions.
+
+Link: https://www.figma.com/community/plugin/1464324555199412831/flutter-color-variables
 
 ## Features
 
