@@ -1,0 +1,20 @@
+{
+  "name": "Flutter Color Variables",
+  "id": "1464324555199412831",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": { "export": "export.html" },
+  "capabilities": [],
+  "enableProposedApi": false,
+  "documentAccess": "dynamic-page",
+  "author": "Tina Roh",
+  "description": "Generate Flutter Color Variables as enums or constants",
+  "editorType": [
+    "figma"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
