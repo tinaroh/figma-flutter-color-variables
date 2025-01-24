@@ -7,7 +7,6 @@
   "capabilities": [],
   "enableProposedApi": false,
   "documentAccess": "dynamic-page",
-  "author": "Tina Roh",
   "description": "Generate Flutter Color Variables as enums or constants",
   "editorType": [
     "figma"
